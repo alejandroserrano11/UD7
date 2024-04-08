@@ -47,4 +47,9 @@ public class Libro {
       }
    }
 
+   @Override
+   public boolean equals(Object obj) {
+      return (this.titulo.equals(((Libro)obj).getTitulo()));
+   }
+
 } // end of Libro

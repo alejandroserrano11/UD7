@@ -64,4 +64,12 @@ public class Usuario {
       System.out.println("]");
    }
 
+   @Override
+   public boolean equals(Object obj) {
+      return (
+         this.nombre.equals(
+            ((Usuario) obj).nombre
+            )
+         );
+   }
 } // end of Usuario
